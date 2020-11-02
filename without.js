@@ -41,23 +41,11 @@ const without = function(array1,array2) {
     if (!inside(element, array2)) {
       remain.push(element);
     }
-    // attemp 20
-    // let j =0
-    // while(j < array2.length){
-    //   if (array1[i] !== array2[j]){
-    //   console.log("IM IN!" + array1[i])
-    //   remain.push(array1[i])
-    // }
-    // console.log(remain)
-    //   console.log(j)
-    //     j++
-        
-    // }
   }
-
-  //console.log (remain);
   return remain;
 };
+
+module.exports = without;
 
 assertArraysEqual(without(["4", "G", "3"], ["3", "G"]), [ "4" ]);
 
